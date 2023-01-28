@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box !important;
+    font-family: 'Noto Sans KR', sans-serif;
+    outline: none;
+    color: #212121;
+}
+
+html {
+    font-size: 13px;
+}
+body {
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    margin: 0;
+}
+dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+button,a,i,span{
+    cursor: pointer;
+}
+
+/* 헤더 영역 시작*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 15px 13px;
+    border-bottom: 1px solid #e6e6e6;
+}
+header .left {
+    width: 30%;
+}
+header .logoa {
+    width: 40%;
+    text-align: center;
+}
+header .logoa a > img{
+    height: 34px;
+}
+header .left .xi-bars {
+    border: 0;
+    /* margin-right: 22px; */
+    background-color: transparent;
+    font-size: 2.5rem;
+}
+header .left .xi-search {
+    border: 0;
+    background-color: transparent;
+    font-size: 2rem;
+}
+
+header .right {
+    width: 30%;
+    display: flex;
+    justify-content: right;
+}
+
+header .right .xi-user-o {
+    border: 0;
+    background-color: transparent;
+    font-size: 2.2rem;
+}
+header .right .xi-cart-o {
+    border: 0;
+    background-color: transparent;
+    font-size: 2.2rem;
+    margin-left: 15px;
+}
+header .right .cart_cnt {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    background-color: #8769f0;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+/* 헤더 영역 종료 */
+
+/* 메뉴바1 시작 */
+nav {
+    display: flex;
+    background: #ffffff;
+}
+nav > a{
+    width: calc(100%/4);
+    text-align: center;
+    color: #494949;
+    font-size: 13px;
+    padding: 12px 0;
+}
+
+/* 메뉴바1 종료 */
+
+
+/* 메인 시작 */
+/* 슬라이더 예정 */
+.hidden{display: none;}
+main .main_slide > a > img{
+    width: 100%;
+    height: 390px;
+}
+
+/* 슬라이더 종료 */
+
+/* 퀵링크 시작 */
+main .quick_links {
+    border: 10px solid #ededed;
+    border-left: 0;
+    border-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+main .quick_links a {
+    width: calc(100%/3);
+    text-align: center;
+    height: 50px;
+    border-left: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 500;
+}
+/* 퀵링크 종료 */
+
+/* 메인배너 시작*/
+main .main_banner_box {
+    font-size: 0;
+}
+main .main_banner_box img{
+    width: 100%;
+    font-size: 0;
+}
+main .main_banner_box1 {
+    display: table;
+    margin-bottom: 20px;
+    border: 1px solid red;
+    width: 100%;
+}
+main .main_banner_box1 li {
+    display: table-cell;
+    font-size: 0;
+    text-align: center;
+    vertical-align: top;
+    width: 50%;
+}
+main .main_banner_box1 img {
+    width: 100%;
+    display: block;
+}
+main .main_banner_box1 li a{
+    width: 100%;
+    font-size: 0;
+}
+/* 메인배너 종료 */
+
+/* 상품노출시작 */
+main h3 {
+    text-align: center;
+    font-size: 20px;
+    color: #212121;
+    padding: 20px;
+    line-height: 1;
+}
+/* 상품노출종료 */
+
+
+/* 메인 종료 */
