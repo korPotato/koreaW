@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>연습!</title>
+    </header>
+    <body>
+       <div id="div">
+        <span>클릭!</span>
+       </div> 
+       <script>
+        window.addEventListener("DOMContentLoaded", function(){
+            const div = document.getElementById("div");
+            div.addEventListener("click", function(event){
+                console.log("target", event.target);
+                console.log("currentTarget", event.currentTarget)
+                console.log("this",this);
+            })
+        })
+       </script>
+    </body>
+</html>

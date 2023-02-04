@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>연습!</title>
+</header>
+<style>
+    .box {
+        padding: 100px;
+    }
+    .box1 {
+        background: gray;
+    }
+    .box2 {
+        background: orange;
+    }
+    .box3 {
+        background: blue;
+    }
+</style>
+<body>
+    <div class="box box1">
+        <div class="box box2">
+            <div class="box box3"></div>
+        </div>
+    </div>
+
+<script>
+    window.addEventListener("DOMContentLoaded", function(){
+        const box1 = document.querySelector(".box1");
+        const box2 = document.querySelector(".box2");
+        const box3 = document.querySelector(".box3");
+
+        box1.addEventListener("click", function(){
+            console.log("box1");
+        }) // 캡쳐링 단계에서 전파
+        box2.addEventListener("click", function(){
+            console.log("box2");
+        })   // 버블링 단계에서 전파
+        box3.addEventListener("click", function(event){
+            // console.log(event)
+            // console.log("target",event.target)
+            // console.log("currentTarget", event.currentTarget);
+            event.stopPropagation(); // 이벤트 전파 중지
+            console.log("box3");    // 기본값으로 버블링 단계에서 전파
+        })
+    });
+</script>
+</body>
+
+</html>

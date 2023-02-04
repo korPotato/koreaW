@@ -1,0 +1,39 @@
+웹 브라우저 객체
+
+서버 -> 응답(HTML 문자열) 
+-> 브라우저 Document 객체 변환
+	HTML, DIV -> Document 객체 변환
+변환 완료 -> DOMContentLoaded 이벤트 발생
+-> 이미지, 외부 css, 외부 js, iframe, video 자원이 로드 완료
+-> Loade 이벤트 발생
+	
+변환 과정
+Document 객체 생성
+-> 검색 효율성을 위해서 배치(이진트리)
+-> DOM Tree
+
+이벤트 처리
+1. 이벤트 처리기
+	- document 객체의 속성
+	
+2. 이벤트 리스너
+	- addEventListener("이벤트명", 이벤트 핸들러 함수 객체, useCapture);
+	이벤트 전파 방향 ( 버블링 단계에서 실행 or 캡쳐링 단계에서 실행)
+	useCapture - false : 기본값 : 이벤트 전파가 버블링 단계에서 실행
+				- true : 이벤트 전파가 캡쳐링 단계에서 실행
+				
+	
+	위에서 부터 내려오면서 타겟을 찾는다 단계를 캡처링
+	
+	찾은 후 다시 올라가지만 그 사이 있는 이벤트를 다시 실행 그걸 버블링이라 한다.
+	
+3. 이벤트 객체
+	- 이벤트 발생한 요소의 정보
+	- target : 실제 클릭한 요소
+	- currentTarget : 이벤트가 바인딩되어 있는 요소
+	- preventDefault() : 기본동착 방지
+	- stopPropagation() : 이벤트 전파 중지
+	
+4. 이벤트 전파
+5. 이벤트 리스너 안의 this
+	-currentTarget 과 동일한 참조 값

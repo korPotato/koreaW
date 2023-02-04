@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>연습!</title>
+</header>
+
+<body>
+    <a href="https://www.naver.com" id="link">네이버 이동</a>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", function(){
+            const link = document.getElementById("link");
+            link.addEventListener("click", function(e) {
+                console.dir(e)
+                e.preventDefault(); // 기본동작을막는다
+                alert("네이버 이동");
+            })
+        })
+    </script>
+
+</body>
+
+</html>
